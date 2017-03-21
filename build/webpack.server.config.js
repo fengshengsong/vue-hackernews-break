@@ -20,7 +20,7 @@ module.exports = Object.assign({}, base, {
 	// 不打包进bundle文件
 	// https://github.com/zhengweikeng/blog/issues/10
 	externals: Object.keys(require('../package.json').dependencies),
-		plugins: [
+	plugins: [
 		new webpack.DefinePlugin({
 			'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
 			'process.env.VUE_ENV': '"server"'

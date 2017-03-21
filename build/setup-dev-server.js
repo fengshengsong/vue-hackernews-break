@@ -1,7 +1,5 @@
 const path = require('path')
 const webpack = require('webpack')
-// A simple in-memory filesystem. Holds data in a javascript object.
-// 内存文件系统，将获取的数据保存在javascript对象中
 const MFS = require('memory-fs')
 const clientConfig = require('./webpack.client.config')
 const serverConfig = require('./webpack.server.config')
